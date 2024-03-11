@@ -49,22 +49,22 @@ public class Main {
 
             }
             int monthlySavings=0;
-            for (int i=1;i<=12;i++){
-                monthlySavings=monthlySavings+290000;
-                if (i<12){
-                System.out.println("Накопления за "+ i+" месяц равны "+monthlySavings);}
-                else if (i==12) {
+            for (int month=1;month<=12;month++){
+                monthlySavings=monthlySavings+29000;
+                if (month<12){
+                System.out.println("Накопления за "+ month+" месяц равны "+monthlySavings);}
+                else if (month==12) {
                     System.out.println("Годовые накопления равны "+monthlySavings);}
 
             }
             int deposit=29000;
-            double monthlyIncome=29000/100;
+            double monthlyIncome=deposit/100;
             double finalAmount=0;
-            for (int i=1;i<=12;i++){
-                    finalAmount=deposit+monthlyIncome*i;
-            if (i<12){
-                    System.out.println("Накопления за "+ i+" месяц равны "+finalAmount);}
-                else if (i==12) {
+            for (int month=1;month<=12;month++){
+                    finalAmount=finalAmount+monthlyIncome;
+            if (month<12){
+                    System.out.println("Накопления за "+ month+" месяц равны "+finalAmount);}
+                else if (month==12) {
                     System.out.println("Годовые накопления равны "+finalAmount);}
 
             }
