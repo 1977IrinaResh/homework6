@@ -58,7 +58,6 @@ public class Main {
 
             }
             double deposit=29000;
-            double finalAmount=0;
             for (int month=1;month<=12;month++){
                     deposit=deposit+deposit*0.01;
             if (month<12){
