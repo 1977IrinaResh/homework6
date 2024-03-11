@@ -57,15 +57,14 @@ public class Main {
                     System.out.println("Годовые накопления равны "+monthlySavings);}
 
             }
-            int deposit=29000;
-            double monthlyIncome=deposit/100;
+            double deposit=29000;
             double finalAmount=0;
             for (int month=1;month<=12;month++){
-                    finalAmount=finalAmount+monthlyIncome;
+                    deposit=deposit+deposit*0.01;
             if (month<12){
-                    System.out.println("Накопления за "+ month+" месяц равны "+finalAmount);}
+                    System.out.println("Накопления за "+ month+" месяц равны "+deposit);}
                 else if (month==12) {
-                    System.out.println("Годовые накопления равны "+finalAmount);}
+                    System.out.println("Годовые накопления равны "+deposit);}
 
             }
             for (int i=1;i<=10;i++){
